@@ -1,5 +1,2 @@
-var accounts = [
-
-];
-
+var accounts = [];
 export default accounts;

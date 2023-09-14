@@ -8,6 +8,5 @@ function Input(props) {
             type={props.type} className="form-input"
             placeholder={props.placeholder}
             value={props.value}
-
         />)
 }
