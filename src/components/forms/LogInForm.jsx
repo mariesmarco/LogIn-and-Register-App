@@ -4,6 +4,9 @@ import Heading from "../Heading";
 import Input from "../Input";
 import accounts from "../../AccountsList";
 import RegisterForm from "./RegisterForm";
+import Footer from "../Footer";
+import ShowDate from "../ShowDate";
+import MainPage from "../MainPage";
 export default LogInForm;
 
 function LogInForm() {
@@ -28,6 +31,7 @@ function LogInForm() {
         const isPasswordCorrect = accounts.some((account) => account.password === password);
         if (isUsernameTaken && isPasswordCorrect) {
             alert("Log in successful!");
+            ReactDOM.render(<MainPage />, document.getElementById('root'));
         } else if (!isUsernameTaken) {
             alert("Username is not registered.");
         } else if (!isPasswordCorrect) {
@@ -89,6 +93,8 @@ function LogInForm() {
                         onClick={loadRegisterForm}>Register</button>
                 </div>
             </form >
+            <Footer />
+            <ShowDate />
         </div >
     );
 }

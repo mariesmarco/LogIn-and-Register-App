@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import Heading from "../Heading";
 import LogInForm from "./LogInForm";
 import accounts from "../../AccountsList";
+import ShowDate from "../ShowDate";
 
 export default RegisterForm;
-
 
 function RegisterForm(props) {
 
@@ -60,6 +60,7 @@ function RegisterForm(props) {
 
     function isRegistered() {
         ReactDOM.render(<LogInForm />, document.getElementById('root'));
+
     }
 
     function handleMouseOver(event) {
@@ -109,6 +110,7 @@ function RegisterForm(props) {
                         onClick={isRegistered}>Do you have an account already?</button>
                 </div>
             </form>
+            <ShowDate />
         </div>
     );
 }

@@ -1,11 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import RegisterForm from "./forms/RegisterForm";
-import LogInForm from "./forms/LogInForm";
+import IntroPage from "../IntroPage";
+import Footer from "./Footer";
+import ShowDate from "./ShowDate";
 export default App;
 
 function App() {
     return (<div className="container">
-        <RegisterForm />
+        <IntroPage />
+        <Footer />
+        <ShowDate />
     </div>);
 }
