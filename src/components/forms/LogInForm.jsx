@@ -6,7 +6,7 @@ import accounts from "../../AccountsList";
 import RegisterForm from "./RegisterForm";
 import Footer from "../Footer";
 import ShowDate from "../ShowDate";
-import MainPage from "../MainPage";
+import MainPage from "../pages/MainPage";
 export default LogInForm;
 
 function LogInForm() {
@@ -93,8 +93,8 @@ function LogInForm() {
                         onClick={loadRegisterForm}>Register</button>
                 </div>
             </form >
-            <Footer />
             <ShowDate />
+            <Footer />
         </div >
     );
 }

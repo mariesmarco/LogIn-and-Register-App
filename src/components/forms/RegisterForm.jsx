@@ -4,6 +4,7 @@ import Heading from "../Heading";
 import LogInForm from "./LogInForm";
 import accounts from "../../AccountsList";
 import ShowDate from "../ShowDate";
+import Footer from "../Footer";
 
 export default RegisterForm;
 
@@ -111,6 +112,7 @@ function RegisterForm(props) {
                 </div>
             </form>
             <ShowDate />
+            <Footer />
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import IntroPage from "../IntroPage";
+import IntroPage from "./pages/IntroPage";
 import Footer from "./Footer";
 import ShowDate from "./ShowDate";
 export default App;

@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import LogInForm from "./components/forms/LogInForm";
-import RegisterForm from "./components/forms/RegisterForm";
-import MainPage from "./components/MainPage";
+import LogInForm from "../forms/LogInForm";
+import RegisterForm from "../forms/RegisterForm";
+import MainPage from "./MainPage";
+import Footer from "../Footer";
+import ShowDate from "../ShowDate";
 export default IntroPage;
 
 function setLogInForm() {
@@ -19,7 +21,11 @@ function IntroPage() {
         <div className="form-group">
             <button onClick={setLogInForm} className="submit-button">Log In</button>
             <button onClick={setRegisterForm} className="submit-button">Register</button>
+            <Footer />
+            <ShowDate />
             {ReactDOM.render(<MainPage />, document.getElementById('root'))}
         </div>
+        <ShowDate />
+        <Footer />
     </div>);
 }
